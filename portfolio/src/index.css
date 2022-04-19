@@ -1,7 +1,12 @@
-body {
+html {
+  scroll-behavior: smooth;
+};
+
+html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color:#a2b9bc;
-  min-height: 100vh;
-}
+  height: 100%;
+  box-sizing: border-box;
+  width: 100vw;
+};

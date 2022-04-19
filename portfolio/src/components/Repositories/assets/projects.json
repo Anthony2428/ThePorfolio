@@ -1,0 +1,31 @@
+[
+    {
+        "name": "SportsBox Sports",
+        "description": "Web Application offering sports entertainment to users, The Right Way.",
+        "gitLink": "https://github.com/Anthony2428/Sportsbox-v2",
+        "liveLink": "https://sportsbox-sports.herokuapp.com/"
+    },
+    {
+        "name": "Forecast Dashboard",
+        "description": "Connects to Weather API to present user with a city's 5-day Forecast.",
+        "gitLink": "https://github.com/Anthony2428/Forecast-Dashboard"
+    },
+    {
+        "name": "The Tech Blog",
+        "description": "CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.",
+        "gitLink": "https://github.com/Anthony2428/Tech-Blog",
+        "liveLink": "https://techblogant.herokuapp.com/"
+    },
+    {
+        "name": "Employee Tracker",
+        "description": "A solution for managing a company's employees using node, inquirer, and MySQL",
+        "gitLink": "https://github.com/Anthony2428/Employee-Tracker",
+        "liveLink": "N/A ~ Console App"
+    },
+    {
+        "name": "Password Generator",
+        "description": "Generates passwords based on user criteria",
+        "gitLink": "https://github.com/Anthony2428/Ant-s-Password-Generator",
+        "liveLink": "https://anthony2428.github.io/Ant-s-Password-Generator"
+    }
+]
