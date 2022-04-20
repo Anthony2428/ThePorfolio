@@ -26,7 +26,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: 10px 10px 0 80px !important;
     padding-right: 10px !important;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100vw;
     flex-direction: row;

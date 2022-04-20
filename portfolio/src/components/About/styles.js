@@ -19,6 +19,7 @@ export const Container = styled.div`
     position: absolute;
     right: 7%;
     top: 2%;
+    display: flex;
     
     @media screen and (max-width: 768px) {
         margin-left: -15px;
@@ -39,14 +40,4 @@ export const Context = styled.p`
         font-size: 24px;
         text-align: center;
     }
-`;
-export const TechStack = styled.div`
-    width: 50%;
-    height: 100%;
-`;
-
-export const DownScroll = styled.a`
-    font-family: 'Permanent Marker',cursive;
-    font-size: 24px;
-    color: #F8E9A1;
 `;

@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import Badge from "../Badge";
 import Skills from "../Skills";
 import About from "../About";
+import Sidebar from "../SideBar";
 
 const Home = () => {
     
@@ -16,6 +17,7 @@ const Home = () => {
                 <FrontTitle>Hello, I am</FrontTitle>
                 <Heading>Anthony Lopez</Heading>
                 <SubHeading>Full Stack Web Developer</SubHeading>
+                <Sidebar />
             </Header>
             <Badge />
         </PageWrapper>

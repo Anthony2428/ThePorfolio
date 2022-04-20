@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterDiv, GithubIcon, LinkedInIcon, ResumeIcon, MailIcon, Footnote, IconDiv } from './styles';
+import { ScrollSpan, UpScroll, FooterDiv, GithubIcon, LinkedInIcon, ResumeIcon, MailIcon, Footnote, IconDiv } from './styles';
 import Resume from "./assets/Resume.docx"
 
 
@@ -7,6 +7,7 @@ const Footer = () => {
 
   return (
     <FooterDiv>
+      <ScrollSpan><UpScroll href="#home">Scroll Up</UpScroll></ScrollSpan>
       <IconDiv>
         <a href="https://www.linkedin.com/in/anthony-lopez-6b356218a/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
