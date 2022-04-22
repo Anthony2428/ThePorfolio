@@ -3,7 +3,7 @@ import NavBar from "../NavBar";
 import { PageWrapper, Header, Heading, SubHeading, Wrapper, FrontTitle, TitleSpan } from "./styles";
 import Footer from "../Footer";
 import Badge from "../Badge";
-import Skills from "../Skills";
+import Projects from "../Projects";
 import About from "../About";
 import Sidebar from "../SideBar";
 
@@ -22,7 +22,7 @@ const Home = () => {
             <Badge />
         </PageWrapper>
         <About />
-        <Skills />
+        <Projects />
         <Footer />
         </Wrapper>
     )

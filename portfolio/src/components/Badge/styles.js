@@ -11,6 +11,11 @@ export const IconDiv = styled.div`
     align-items: center;
     position: absolute;
     bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        position: none;
+    }
 `;
 
 export const HTMLIcon = styled(FaHtml5)`

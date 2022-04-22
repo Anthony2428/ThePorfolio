@@ -4,13 +4,13 @@ import { FaCode } from 'react-icons/fa'
 export const Heading = styled.a`
     font-family: 'Permanent Marker',cursive;
     font-size: 48px;
-    float: left;
+    position: relative;
+    right: 45px;
     cursor: pointer;
     color: #fff;
 
     @media screen and (max-width: 768px) {
-        position: relative;
-        right: 50px;
+        display: none;
     };
 
     &:hover {

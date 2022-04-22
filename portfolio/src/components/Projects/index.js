@@ -1,18 +1,46 @@
 import React from "react";
 import Repository from "../Repositories";
-import { PageWrapper, Wrapper } from "./styles";
+import { PageWrapper, Header, ProjectsDiv, ProjectsRow, ProjectCard, ProjectTitleB, ProjectTitleS } from "./styles";
+
 const Projects = () => {
     
     return (
-        <Wrapper>
+            <PageWrapper>
+                    <ProjectsDiv id="projects">
+                        <Header className="item" data-aos="fade-down">Projects</Header>
+                    <ProjectsRow>
 
-        <PageWrapper>
-                <div >
-                    {/* <Repository /> */}
-                    sad
-            </div>
-        </PageWrapper>
-        </Wrapper>
+                    <ProjectCard>
+                            <ProjectTitleB>
+                                <ProjectTitleS>Title</ProjectTitleS>
+                            </ProjectTitleB>
+                        </ProjectCard>
+
+                        <ProjectCard>
+                            <ProjectTitleB>
+                                <ProjectTitleS>Title</ProjectTitleS>
+                            </ProjectTitleB>
+                        </ProjectCard>
+
+                    </ProjectsRow>
+
+                    <ProjectsRow>
+
+                    <ProjectCard>
+                            <ProjectTitleB>
+                                <ProjectTitleS>Title</ProjectTitleS>
+                            </ProjectTitleB>
+                        </ProjectCard>
+
+                        <ProjectCard>
+                            <ProjectTitleB>
+                                <ProjectTitleS>Title</ProjectTitleS>
+                            </ProjectTitleB>
+                        </ProjectCard>
+                        
+                    </ProjectsRow>
+                    </ProjectsDiv>
+            </PageWrapper>
 )
 };
 export default Projects;

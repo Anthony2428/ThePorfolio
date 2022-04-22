@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <Nav>
     <Bars />
-      <Heading href='#about'>About</Heading>
+        <Heading href='#about'>About</Heading>
       <NavMenu>
         <NavLink href="#projects">Projects</NavLink>
       </NavMenu>

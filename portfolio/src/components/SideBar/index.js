@@ -1,13 +1,11 @@
 import React from "react";
-import { Wrapper, SidebarDiv, GithubIcon, LinkedInIcon, ResumeIcon, MailIcon, IconDiv, IconCaption } from './styles';
+import { Wrapper, GithubIcon, LinkedInIcon, ResumeIcon, MailIcon, IconDiv } from './styles';
 import Resume from "./assets/Resume.docx"
 
 
 const SideBar = () => {
 
   return (
-      <Wrapper>
-        <SidebarDiv />
         <IconDiv>
             <a href="https://www.linkedin.com/in/anthony-lopez-6b356218a/" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon />
@@ -18,12 +16,10 @@ const SideBar = () => {
             <a href={Resume} download target="_blank" rel="noopener noreferrer">
                 <ResumeIcon />
             </a>
-            <a href="mailto: alopez0218.al@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:alopez0218.al@gmail.com" target="_blank" rel="noopener noreferrer">
                 <MailIcon />
             </a>
         </IconDiv>
-      </Wrapper>
-
   );
 }
 

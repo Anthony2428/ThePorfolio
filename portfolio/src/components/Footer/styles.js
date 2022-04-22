@@ -16,11 +16,8 @@ export const FooterDiv = styled.div`
     text-align: center;
 
     @media screen and (max-width: 768px) {
-        height: 17vw;
-    };
-    @media screen and (max-width: 480px) {
-        height: 25vw;
-    };
+        height: max-content;
+    }
 `;
 
 export const Footnote = styled.h1`
