@@ -46,15 +46,14 @@ export const ProjectsRow = styled.div`
 `;
 export const ProjectTitleB = styled.p`
     width: 100%;
-    background-image: linear-gradient(#fff, #000);
+    background-image: linear-gradient(#5b5a5a, #000);
     text-align: center;
     position: absolute;
     bottom: 0;
     visibility: hidden;
     opacity:0;
-    transition: opacity 0.25s linear;
-    height: 25%;
-    border-radius: 10%;
+    transition: opacity 0.3s linear;
+    height: 15%;
     margin: auto;
 `;
 export const ProjectTitleS = styled.span`
@@ -75,6 +74,14 @@ export const ProjectCard = styled.div`
     margin: 30px;
     position: relative;
     overflow: hidden;
+    
+    &:hover {
+        transition: ease-in-out all .25s; 
+        -moz-transition: ease-in-out all .25s;
+        -webkit-transition: ease-in-out all .25s;
+        border: 2.5px solid #F8E9A1;
+        cursor: pointer;
+    }
 
     &:hover > p {
             transition: ease-in-out all .25s; 

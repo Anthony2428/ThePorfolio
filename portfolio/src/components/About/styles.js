@@ -37,12 +37,13 @@ export const Container = styled.div`
 
 export const Context = styled.p`
     font-family: 'Nunito', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     color: #374785;
     height: auto;
+    text-align: right;
 
     @media screen and (max-width: 768px) {
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
     }
 `;

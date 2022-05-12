@@ -14,6 +14,7 @@ export const FooterDiv = styled.div`
     background-color: #24305E;
     z-index: 5;
     text-align: center;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         height: max-content;

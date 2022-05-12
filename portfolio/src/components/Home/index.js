@@ -6,6 +6,7 @@ import Badge from "../Badge";
 import Projects from "../Projects";
 import About from "../About";
 import Sidebar from "../SideBar";
+import Education from "../Accreditation";
 
 const Home = () => {
     
@@ -17,10 +18,11 @@ const Home = () => {
                 <FrontTitle>Hello, I am</FrontTitle>
                 <Heading>Anthony Lopez</Heading>
                 <SubHeading>Full Stack Web Developer</SubHeading>
-                <Sidebar />
+                <Sidebar id="trigger-education" />
             </Header>
             <Badge />
         </PageWrapper>
+        <Education />
         <About />
         <Projects />
         <Footer />

@@ -6,9 +6,9 @@ import Resume from "./assets/Resume.docx"
 const Footer = () => {
 
   return (
-    <FooterDiv>
+    <FooterDiv id="trigger-footer">
       <ScrollSpan><UpScroll href="#home">Scroll Up</UpScroll></ScrollSpan>
-      <IconDiv>
+      <IconDiv className="item" data-aos="fade-up" data-aos-anchor="#trigger-footer" data-aos-anchor-placement="top-center">
         <a href="https://www.linkedin.com/in/anthony-lopez-6b356218a/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
         </a>
@@ -22,7 +22,7 @@ const Footer = () => {
               <MailIcon />
         </a>
       </IconDiv>
-        <Footnote>
+        <Footnote className="item" data-aos="fade-up" data-aos-anchor="#trigger-footer" data-aos-anchor-placement="top-center">
           Anthony Lopez - Full Stack Web Developer
           </Footnote>
     </FooterDiv>
