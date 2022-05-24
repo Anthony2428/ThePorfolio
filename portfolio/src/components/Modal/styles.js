@@ -23,9 +23,12 @@ export const Container = styled.div`
 `
   
 export const Title = styled.div` 
-    display: inline-block;
-    text-align: center;
+    display: grid ;
+    text-align: right;
     margin-top: 10px;
+    border: 4px solid;
+	border-image: linear-gradient(to left, cornflowerblue, skyblue) 0 0 1 0;
+    font-size: 1.8rem;
 `;
   
 export const BtnDiv = styled.div`
@@ -44,7 +47,17 @@ export const BtnDiv = styled.div`
 export const Body = styled.div`
     flex: 50%;
     display: flex;
-    justify-content: center;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+`;
+export const Stack = styled.div`
+    flex: 50%;
+    display: flex;
+    width: 50%;
+    justify-content: right;
     align-items: center;
     font-size: 1.7rem;
     text-align: center;
@@ -53,18 +66,85 @@ export const Body = styled.div`
 export const Footer = styled.div`
     flex: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 
-    > button {
+    > a {
         width: 150px;
-        height: 45px;
-        margin: 10px;
-        border: none;
-        background-color: cornflowerblue;
-        color: white;
-        border-radius: 8px;
-        font-size: 20px;
-        cursor: pointer;
+        margin: 5px;
   }
 `;
+
+export const LiveLink = styled.a`
+  background: #b62e2a;
+  border: 1px solid #b62e2a;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+
+&:hover,
+&:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #b62e2a;
+}
+
+&:active {
+  opacity: .5;
+}
+`;
+
+export const GitHubLink = styled.a`
+  background: #2da44e;
+  border: 1px solid #2da44e;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #181717;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+
+&:hover,
+&:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #181717;
+}
+
+&:active {
+  opacity: .5;
+}
+`

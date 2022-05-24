@@ -1,19 +1,19 @@
-import React, { useEffect, replaceState } from "react";
-import {Background, Container, BtnDiv, Title, Body, Footer} from "./styles.js";
+import React, { useEffect } from "react";
+import {Background, Container, BtnDiv, Title, Body, Footer, LiveLink, GitHubLink} from "./styles.js";
 
-const ProjectModal = ({ setModalOpen, openModal }) => {
+const ProjectModal = ({ setModalOpen, openModal, modalData }) => {
 
     const enableScroll = () => {
-            document.body.style.overflow = 'visible';
-            window.location.href = "#projects";    
-            
-            console.log(document)
+        window.location.href = "#projects";    
+        document.body.style.overflowY = 'visible';
+        document.querySelector("#home > div.sc-gKXOVf.iWZMjS > nav").style.visibility = 'visible';            
             return;
         };
-        
+
         useEffect(() => {
             if (openModal) {
-                document.body.style.overflow = 'hidden';
+                document.body.style.overflowY = 'hidden';
+                document.querySelector("#home > div.sc-gKXOVf.iWZMjS > nav").style.visibility = 'hidden';
                 window.location.href = "#projects";    
             } 
         return;
@@ -33,15 +33,16 @@ const ProjectModal = ({ setModalOpen, openModal }) => {
           </button>
         </BtnDiv>
         <Title>
-          <h1>Are You Sure You Want to Continue?</h1>
+          <h1 style={{padding: '10px'}}>{modalData.name}</h1>
         </Title>
         <Body>
-          <p>The next page looks amazing. Hope you want to go there!</p>
+          <p>{modalData.description}</p>
         </Body>
         <Footer>
 
-          <button>Live Link</button>
-          <button>Github Link</button>
+          <LiveLink href={modalData.gitLink}>Live</LiveLink>
+          <GitHubLink href={modalData.liveLink}>GitHub</GitHubLink>
+          
         </Footer>
       </Container>
     </Background>
