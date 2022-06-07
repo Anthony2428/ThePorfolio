@@ -1,5 +1,5 @@
 import React from "react";
-import { CSSIcon, HTMLIcon, JSIcon, ReactIcon, SQLIcon, NoSQLIcon, DynamodbIcon, IconDiv, SectionTitle } from './styles';
+import { CSSIcon, HTMLIcon, JSIcon, ReactIcon, SQLIcon, NoSQLIcon, DynamodbIcon, IconDiv, SectionTitle, GitIcon, AWSIcon } from './styles';
 
 
 const Badge = () => {
@@ -16,6 +16,8 @@ const Badge = () => {
           <SQLIcon data-hover="MySQL and SQL Databases"/>
           <NoSQLIcon data-hover="Mongodb and NoSQL Databases"/>
           <DynamodbIcon data-hover="DynamoDB Databases"/>
+          <GitIcon data-hover="DynamoDB Databases"/>
+          <AWSIcon data-hover="DynamoDB Databases"/>
       </IconDiv>
 
   );

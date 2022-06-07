@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaAws } from 'react-icons/fa';
 import { SiJavascript, SiMysql, SiMongodb, SiAmazondynamodb } from 'react-icons/si';
 
 export const IconDiv = styled.div`
@@ -69,6 +69,20 @@ export const DynamodbIcon = styled(SiAmazondynamodb)`
 `;
 export const ReactIcon = styled(FaReact)`
     color: #61DAFB;
+    font-size: 6rem;
+    @media screen and (max-width: 337px) {
+        font-size: 4.5rem;
+    }
+`;
+export const GitIcon = styled(FaGitAlt)`
+    color: #F05032;
+    font-size: 6rem;
+    @media screen and (max-width: 337px) {
+        font-size: 4.5rem;
+    }
+`;
+export const AWSIcon = styled(FaAws)`
+    color: #232F3E;
     font-size: 6rem;
     @media screen and (max-width: 337px) {
         font-size: 4.5rem;

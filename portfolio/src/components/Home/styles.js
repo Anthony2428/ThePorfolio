@@ -21,6 +21,7 @@ export const SubHeading = styled.h1`
     font-size: 52px;
     color: #374792;
     margin: auto;
+    
     @media screen and (max-width: 768px) {
         font-size: 25px;
     }

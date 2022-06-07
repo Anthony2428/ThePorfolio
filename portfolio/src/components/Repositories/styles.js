@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const ProjectTitleB = styled.p`
     width: 100%;
-    background-image: linear-gradient(#5b5a5a, #000);
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
     text-align: center;
+    margin-left: 20px;
     position: absolute;
     bottom: 0;
     visibility: hidden;

@@ -1,16 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
 import TechBlog from "./screenshots/TechBlog.png";
 import ForecastDashboard from "./screenshots/ForecastDashboard.png";
 import Sportsbox from "./screenshots/Sportsbox.png";
 import PasswordGen from "./screenshots/PasswordGen.png";
 import EmployeeTracker from "./screenshots/EmployeeTracker.png";
+import HWY2Fusion from "./screenshots/HWY2Fusion.png";
 import { ProjectCard, ProjectTitleB, ProjectsRow } from "./styles";
 
-const Repository = ({setModalOpen, setModalData}) => {
+export const Repository = ({setModalOpen, setModalData}) => {
     const repos = [
         {
             name: "SportsBox Sports",
-            description: "Web Application offering sports entertainment to users, The Right Way.",
+            description: "Sports Hub that delivers your favorite Sport's News and Team Data.",
             gitLink: "https://github.com/Anthony2428/Sportsbox-v2",
             liveLink: "https://sportsbox-sports.herokuapp.com/",
             image: Sportsbox
@@ -61,7 +62,7 @@ const Repository = ({setModalOpen, setModalData}) => {
                 {allJsx[1]}
             </ProjectsRow>
 
-            <ProjectsRow id="trigger-footer">
+            <ProjectsRow>
                 {allJsx[2]}
                 {allJsx[3]}
             </ProjectsRow>
@@ -71,4 +72,33 @@ const Repository = ({setModalOpen, setModalData}) => {
         </>
     )
 };
-export default Repository;
+export const CurrentProject = ({setModalOpen, setModalData}) => {
+    const repos = [
+        {
+            name: "HWY 2 Diner",
+            description: "React website hosted on AWS Services",
+            tech: ["React", "AWS S3", "AWS Cloudfront", "AWS Route 53"],
+            gitLink: "https://github.com/Anthony2428/HWY-2-Fusion",
+            liveLink: "https://github.com/Anthony2428/HWY-2-Fusion",
+            image: HWY2Fusion
+        },
+]
+
+    const allJsx = repos.map(repo => {
+        return(
+            <ProjectCard id="trigger-footer" onClick={(e) => {e.preventDefault(); setModalData(repo); setModalOpen(true);}}>
+                <img style={{padding: "10px"}} src={repo.image} alt=""/>
+                <ProjectTitleB>
+                    {repo.name}
+                </ProjectTitleB>
+            </ProjectCard>
+        );
+    })
+    return (
+        <>
+            <ProjectsRow id="trigger-Cproject">
+                {allJsx}
+            </ProjectsRow>
+        </>
+    )
+};

@@ -6,7 +6,7 @@ const About = () => {
     return (
         <PageWrapper>
                 <Container id="about">
-                    <Context>I am Anthony. A Full Stack Web Developer with a Front-end Focus. I have a passion for designing ways for data to come to life with code. Engaging the user with visuals and dynamics of a web app is what I am about. I love to combine my skills with other things I am passionate about. For example, Sports and Gaming! My ultimate goal is to sharpen my skills in a role that will elavate me. This will include, learning new things, getting creative to improve web apps, and even building from scratch!</Context>
+                    <Context>I'm Anthony. A Lifetime Learner and Full Stack Software Engineer. I attended the University of Washington Coding Bootcamp and achieved the Certificate of Completion in Full Stack Web Development. This achievement is the greatest learning experience I've come across and has motivated me to never stop learning and refining my skills. I love to combine my skills with other things I am passionate about. For example, Sports and Gaming! My studies were not halted after my Certification. I dove into Cloud Computing as it plays a major role in how web apps operate today. I achieved the Cloud Practitioner and Solutions Architect Certifications within AWS. I'm currently studying for the AWS Developer Assoicate Certificate. My ultimate goal is to sharpen my skills in a role that will elevate and test my knowledge. This will include learning new languages and technologies, getting creative to improve web apps, and connecting and growing with my collaborators!</Context>
                 </Container>
         </PageWrapper>
 )
