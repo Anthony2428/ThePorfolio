@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import {Background, Container, BtnDiv, Title, Body, Footer, LiveLink, GitHubLink} from "./styles.js";
+import {Background, Container, BtnDiv, Title, Body, Footer, LiveLink, GitHubLink, Stack} from "./styles.js";
 
 const ProjectModal = ({ setModalOpen, openModal, modalData }) => {
 
     const enableScroll = () => {
         window.location.href = "#projects";    
         document.body.style.overflowY = 'visible';
-        document.querySelector("#home > div.sc-gKXOVf.iWZMjS > nav").style.visibility = 'visible';            
+        document.querySelector("#nav").style.visibility = 'visible';            
             return;
         };
 
         useEffect(() => {
             if (openModal) {
                 document.body.style.overflowY = 'hidden';
-                document.querySelector("#home > div.sc-gKXOVf.iWZMjS > nav").style.visibility = 'hidden';
+                document.querySelector("#nav").style.visibility = 'hidden';
                 window.location.href = "#projects";    
             } 
         return;
@@ -40,10 +40,11 @@ const ProjectModal = ({ setModalOpen, openModal, modalData }) => {
         </Body>
         <Footer>
 
-          <LiveLink href={modalData.gitLink}>Live</LiveLink>
-          <GitHubLink href={modalData.liveLink}>GitHub</GitHubLink>
+          <LiveLink href={modalData.liveLink} target="_blank" rel="noopener noreferrer">Live</LiveLink>
+          <GitHubLink href={modalData.gitLink} target="_blank" rel="noopener noreferrer">GitHub</GitHubLink>
           
         </Footer>
+        <Stack>{modalData.tech}</Stack>
       </Container>
     </Background>
   );

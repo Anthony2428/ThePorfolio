@@ -1,9 +1,9 @@
 import React from "react";
-import TechBlog from "./screenshots/TechBlog.png";
+import ThePortfolio from "./screenshots/ThePortfolio.png";
 import ForecastDashboard from "./screenshots/ForecastDashboard.png";
 import Sportsbox from "./screenshots/Sportsbox.png";
 import PasswordGen from "./screenshots/PasswordGen.png";
-import EmployeeTracker from "./screenshots/EmployeeTracker.png";
+import NoteTaker from "./screenshots/NoteTaker.png";
 import HWY2Fusion from "./screenshots/HWY2Fusion.png";
 import { ProjectCard, ProjectTitleB, ProjectsRow } from "./styles";
 
@@ -11,37 +11,43 @@ export const Repository = ({setModalOpen, setModalData}) => {
     const repos = [
         {
             name: "SportsBox Sports",
-            description: "Sports Hub that delivers your favorite Sport's News and Team Data.",
+            description: "Sports Hub that delivers your favorite Sport's News and Team Data. Hosted on Heroku.",
+            tech: '[React, React Hooks, MySQL + Sequelize, CSS, Javascript, Express.js - Backend + Routing, 3rd Party API Fetches/Calls, Axios, Sportdata API]',
             gitLink: "https://github.com/Anthony2428/Sportsbox-v2",
             liveLink: "https://sportsbox-sports.herokuapp.com/",
             image: Sportsbox
         },
         {
             name: "Forecast Dashboard",
-            description: "Connects to Weather API to present user with a city's 5-day Forecast.",
+            description: "Connects to Weather API to present user with a city's 5-day Forecast. Hosted on Github Pages.",
+            tech: '[HTML, CSS, Javascript, 3rd Party API Fetches, Google Maps APIs, Google Autocomplete Places API, OpenWeather API]',
             gitLink: "https://github.com/Anthony2428/Forecast-Dashboard",
+            liveLink: "https://anthony2428.github.io/Forecast-Dashboard/",
             image: ForecastDashboard
         },
         {
-            name: "The Tech Blog",
-            description: "CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.",
-            gitLink: "https://github.com/Anthony2428/Tech-Blog",
-            liveLink: "https://techblogant.herokuapp.com/",
-            image: TechBlog,
-        },
-        {
-            name: "Employee Tracker",
-            description: "A solution for managing a company's employees using node, inquirer, and MySQL",
-            gitLink: "https://github.com/Anthony2428/Employee-Tracker",
-            image: EmployeeTracker,
-            liveLink: "N/A ~ Console App",
-        },
-        {
             name: "Password Generator",
-            description: "Generates passwords based on user criteria",
+            description: "Generates passwords based on user criteria.",
+            tech: '[HTML, CSS, Javascript]',
             gitLink: "https://github.com/Anthony2428/Ant-s-Password-Generator",
             liveLink: "https://anthony2428.github.io/Ant-s-Password-Generator",
             image: PasswordGen
+        },
+        {
+            name: "Note Taker",
+            description: "Frontend tools with an express backend, allowing user to save and/or delete user notes in a json file. Hosted on Heroku.",
+            tech: '[HTML, CSS, Javascript, Express.js - Backend + Routing]',
+            gitLink: "https://github.com/Anthony2428/Note-Taker",
+            image: NoteTaker,
+            liveLink: "https://radiant-tor-11613.herokuapp.com/",
+        },
+        {
+            name: "The Portfolio",
+            description: "My Portfolio built in React, hosted using Amazon S3, Amazon Cloudfront, and Amazon Route 53.",
+            tech: '[React, AWS S3, AWS Cloudfront, AWS Route 53]',
+            gitLink: "https://github.com/Anthony2428/ThePorfolio",
+            liveLink: "https://www.dev-anthonylopez.com/",
+            image: ThePortfolio,
         },
 ]
 
@@ -76,8 +82,8 @@ export const CurrentProject = ({setModalOpen, setModalData}) => {
     const repos = [
         {
             name: "HWY 2 Diner",
-            description: "React website hosted on AWS Services",
-            tech: ["React", "AWS S3", "AWS Cloudfront", "AWS Route 53"],
+            description: "React website for a Diner located in Monroe, WA. Hosted using AWS Services.",
+            tech: '[React, CSS, Javascript, AWS S3, AWS Cloudfront, AWS Route 53]',
             gitLink: "https://github.com/Anthony2428/HWY-2-Fusion",
             liveLink: "https://github.com/Anthony2428/HWY-2-Fusion",
             image: HWY2Fusion

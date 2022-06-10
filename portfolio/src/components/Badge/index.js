@@ -10,8 +10,8 @@ const Badge = () => {
             Skills!
           </SectionTitle>
           <HTMLIcon data-hover="HTML"/>
-          <CSSIcon data-hover="CSS"/>
           <JSIcon data-hover="Javascript"/>
+          <CSSIcon data-hover="CSS"/>
           <ReactIcon data-hover="React"/>
           <SQLIcon data-hover="MySQL and SQL Databases"/>
           <NoSQLIcon data-hover="Mongodb and NoSQL Databases"/>

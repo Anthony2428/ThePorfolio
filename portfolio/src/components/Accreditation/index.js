@@ -1,5 +1,5 @@
 import React from "react";
-import { PageWrapper, Container, Header, Certificates } from "./styles";
+import { PageWrapper, Container, Header, Certificates, Image } from "./styles";
 import AWSCCP from "./images/AWSCCP.png";
 import AWSSAA from "./images/AWSSAA.png";
 import UWCert from "./images/UWCert.png";
@@ -7,13 +7,13 @@ import UWCert from "./images/UWCert.png";
 const Education = () => {
     
     return (
-        <PageWrapper>
-                <Container id="education" className="item">
-                    <Header>Education</Header>
+        <PageWrapper id="education">
+                <Container id="trigger-edu">
+                    <Header className="item" data-aos="fade-right" data-aos-anchor="#trigger-edu">Education</Header>
                     <Certificates>
-                        <img src={AWSCCP} alt="" />
-                        <img src={UWCert} alt="" />
-                        <img src={AWSSAA} alt="" />
+                        <Image src={AWSCCP} alt="" />
+                        <Image src={UWCert} alt="" />
+                        <Image src={AWSSAA} alt="" />
                     </Certificates>                
             </Container>
         </PageWrapper>

@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    height: auto;
-    width: 100%;
     flex-direction: column;
-    height: 100%;
 `;
 
 export const PageWrapper = styled.div`
@@ -15,6 +12,7 @@ export const PageWrapper = styled.div`
     height: 100vh;
     background-color: #A8D0E6;
     flex-direction: column;
+    width: 100%;
 `;
 export const SubHeading = styled.h1`
     font-family: 'Nunito', sans-serif;
@@ -25,6 +23,9 @@ export const SubHeading = styled.h1`
     @media screen and (max-width: 768px) {
         font-size: 25px;
     }
+    @media screen and (max-width: 1115px) {
+        font-size: 34px;
+    }
 `;
 export const Heading = styled.h1`
     font-family: 'Nunito', sans-serif;
@@ -34,6 +35,9 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 52px;
+    }
+    @media screen and (max-width: 1115px) {
+        font-size: 76px;
     }
 `;
 export const Header = styled.div`
@@ -49,6 +53,9 @@ export const Header = styled.div`
         margin-left: -15px;
         line-height: 45px; 
         padding: 0;
+    }
+    @media screen and (max-width: 1115px) {
+        top: 20%;
     }
 `;
 export const FrontTitle = styled.p`

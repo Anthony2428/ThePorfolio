@@ -11,6 +11,7 @@ export const Heading = styled.a`
 
     @media screen and (max-width: 768px) {
         display: none;
+        justify-content: center;
     };
 
     &:hover {

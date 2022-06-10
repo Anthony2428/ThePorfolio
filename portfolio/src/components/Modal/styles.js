@@ -59,13 +59,15 @@ export const Body = styled.div`
 `;
 
 export const Stack = styled.div`
-    flex: 50%;
-    display: flex;
-    width: 50%;
-    justify-content: right;
+    bottom: 0;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
-    text-align: center;
+
+    > a {
+        width: 150px;
+        margin: 5px;
+  }
 `;
   
 export const Footer = styled.div`

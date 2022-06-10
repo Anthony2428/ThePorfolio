@@ -11,10 +11,22 @@ export const IconDiv = styled.div`
     align-items: center;
     position: absolute;
     bottom: 0;
+    flex-wrap: wrap;
     
     @media screen and (max-width: 768px) {
-        flex-wrap: wrap;
         padding: 0px;
+    }
+
+    &:hover > p {
+            transition: ease-in-out all .25s; 
+            -moz-transition: ease-in-out all .25s;
+            -webkit-transition: ease-in-out all .25s;
+            visibility: visible;
+            opacity: 1;
+    }
+    > svg {
+        margin: 5px; 
+
     }
 `;
 

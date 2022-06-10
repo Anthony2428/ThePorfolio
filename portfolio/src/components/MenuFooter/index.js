@@ -3,7 +3,7 @@ import { GithubIcon, LinkedInIcon, ResumeIcon, MailIcon, IconDiv } from './style
 import Resume from "./assets/Resume.docx"
 
 
-const SideBar = () => {
+const MenuFooter = () => {
 
   return (
         <IconDiv>
@@ -23,4 +23,4 @@ const SideBar = () => {
   );
 }
 
-export default SideBar;
+export default MenuFooter;

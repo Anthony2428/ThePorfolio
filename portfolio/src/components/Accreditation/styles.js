@@ -26,15 +26,15 @@ export const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-
     @media screen and (max-width: 768px) {
         flex-direction: column;
         position: none;
     }
-`;
+    `;
 
 export const Certificates = styled.div`
     margin-top: 70px;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
@@ -47,4 +47,7 @@ export const Certificates = styled.div`
         position: none;
         margin-top: 50px;
     }
+`;
+export const Image = styled.img`
+    margin: 15px;
 `;

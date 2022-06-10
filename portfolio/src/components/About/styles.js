@@ -18,6 +18,15 @@ export const Container = styled.div`
     position: relative;
 `;
 
+export const Header = styled.h1`
+    font-family: 'Permanent Marker',cursive;
+    font-size: 52px;
+    padding: 10px;
+    color: #374785;
+    position: relative;
+    top: 5%;
+`;
+
 export const Context = styled.p`
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
