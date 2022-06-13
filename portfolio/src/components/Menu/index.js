@@ -7,12 +7,14 @@ const Menu = ({ setMenuOpen, openMenu }) => {
     const enableScroll = () => {
         window.location.href = "#home";    
         document.body.style.overflowY = 'visible';
+        document.body.style.overflowX = 'visible';
             return;
         };
 
         useEffect(() => {
             if (openMenu) {
                 document.body.style.overflowY = 'hidden';
+                document.body.style.overflowX = 'hidden';
                 window.location.href = "#home";    
             } 
         return;

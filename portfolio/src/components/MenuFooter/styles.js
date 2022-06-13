@@ -9,12 +9,13 @@ export const IconDiv = styled.div`
     justify-content: center;
     align-items: center;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
+    padding: 20px;
 `;
 
 export const LinkedInIcon = styled(FaLinkedin)`
     color: #fff;
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     margin: 20px;
     cursor: pointer;
 
@@ -30,7 +31,7 @@ export const LinkedInIcon = styled(FaLinkedin)`
 
 export const GithubIcon = styled(FaGithub)`
     color: #fff;
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     margin: 20px;
     cursor: pointer;
 
@@ -46,7 +47,7 @@ export const GithubIcon = styled(FaGithub)`
 
 export const MailIcon = styled(GrMail)`
     color: #fff;
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     margin: 20px;
     cursor: pointer;
 
@@ -62,7 +63,7 @@ export const MailIcon = styled(GrMail)`
 
 export const ResumeIcon = styled(HiDocumentDownload)`
     color: #fff;
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     margin: 20px;
     cursor: pointer;
 

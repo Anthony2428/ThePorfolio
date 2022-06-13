@@ -12,19 +12,22 @@ export const PageWrapper = styled.div`
     height: 100vh;
     background-color: #A8D0E6;
     flex-direction: column;
+    position: relative;
     width: 100%;
+    min-height: 800px;
 `;
+
 export const SubHeading = styled.h1`
     font-family: 'Nunito', sans-serif;
     font-size: 52px;
     color: #374792;
     margin: auto;
     
-    @media screen and (max-width: 768px) {
-        font-size: 25px;
-    }
     @media screen and (max-width: 1115px) {
         font-size: 34px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
     }
 `;
 export const Heading = styled.h1`
@@ -33,11 +36,11 @@ export const Heading = styled.h1`
     text-align: left;
     color: #374785;
 
-    @media screen and (max-width: 768px) {
-        font-size: 52px;
-    }
     @media screen and (max-width: 1115px) {
         font-size: 76px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 52px;
     }
 `;
 export const Header = styled.div`
@@ -48,14 +51,14 @@ export const Header = styled.div`
     position: absolute;
     top: 30%;
 
+    @media screen and (max-width: 1115px) {
+        top: 20%;
+    }
     @media screen and (max-width: 768px) {
         top: 7%;
         margin-left: -15px;
         line-height: 45px; 
         padding: 0;
-    }
-    @media screen and (max-width: 1115px) {
-        top: 20%;
     }
 `;
 export const FrontTitle = styled.p`

@@ -11,7 +11,6 @@ export const Background = styled.div`
 `;
   
 export const Container = styled.div`
-    width: 100%;
     height: 100%;
     background-color: #374785;
     flex-direction: column;
@@ -19,10 +18,8 @@ export const Container = styled.div`
     transition: all .4s;
     position: relative;
     margin: auto;
-
-    @media screen and (max-width: 525px) {
-        width: 90vw;
-    }
+    padding: 10px;
+    width: 100%;
 `
 
 export const BtnDiv = styled.div`
