@@ -12,7 +12,6 @@ const ProjectModal = ({ setModalOpen, openModal, modalData }) => {
 
         useEffect(() => {
             if (openModal) {
-                window.location.href = "#projects";    
                 document.body.style.overflowY = 'hidden';
                 document.querySelector("#nav").style.visibility = 'hidden';
             } 
